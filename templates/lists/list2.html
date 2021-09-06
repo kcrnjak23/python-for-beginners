@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block head %}
+<title>List2</title>
+<link rel="stylesheet" href="/static/css/main.css">
+{% endblock %}
+
+
+{% block body %}
+<div class="center">
+    <h2>Strings as Lists</h2>
+    <p>
+        <b>Strings</b> can be indexed like lists too!
+        Indexing a <b>string</b> is like creating a list containing each character in the string.
+        For example:
+    </p>
+    <div class="example">
+        <span>str = "Hello world!"</span>
+        <br>
+        <span>print(str[3])</span>
+        <br>
+        <span><b>l</b></span>
+        <br>
+        <span>print(str[10])</span>
+        <br>
+        <span><b>d</b></span>  
+    </div>
+    <p>Space (" ") is also a symbol and has an index.Space (" ") is also a symbol and has an index.</p>
+    <div class="note">
+        <p>Trying to access a non-existing index will result in an error.</p>
+    </div>
+    <div class="task" id="task">
+        <p>What's the output of this code?</p>
+        <span>x = "Python"</span>
+        <br>
+        <span>print(x[1] + x[4])</span>
+        <br>
+        <input type="text" id="inptConc">
+        <button class="btnCheck" onclick="listConc()">Check</button>
+    </div>
+    <div class="buttons">
+        <a href="/lists" class="btnBack">Back</a>
+        <a href="/lists/list3" id="continue" class="btnContinue">Continue</a>
+        <a id="retry" class="btnRetry" onclick="retry()">Retry</a>
+    </div>
+</div>
+
+<script src="/static/js/main.js"></script>
+{% endblock %}

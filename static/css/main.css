@@ -1,0 +1,266 @@
+/*BASIC*/
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+}
+html,body{
+    height: 100%;
+}
+body{
+    background-color:#F3F3F3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3125rem;
+    line-height: 1.6;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+h1,h2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1em 0;
+    line-height: 1;
+    font-weight: 900;
+    color: white;
+    
+}
+
+h2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 1rem;
+    line-height: 1;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+
+h3{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 1em;
+    line-height: 1;
+    font-weight: 300;
+    color: white;
+
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+p, span{
+    color: #ffffff;
+    text-align:justify;
+    font-size: medium;
+}
+
+input{
+    margin-bottom: 1rem;
+    width: 6rem;
+    height: 2rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+/*MAIN CLASSES*/
+.container{
+    background-color: #282828;
+    margin-inline: auto;
+    width: min(90%, 40rem);
+}
+
+.header{
+    text-align: center;
+}
+
+.example, .note, .task{
+    color: white;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0 0.5rem;
+    border: 0.05rem solid white;
+}
+
+.example{
+    background-color: #292929;
+}
+
+.note{
+    background-color: #17a2b8;
+}
+
+.task{
+    background-color: #004e7c;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.task p{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.task span{
+    text-align: left;
+}
+
+/*DROPDOWN*/
+.dropdown-menu{
+    background-color: #282828;
+    border-radius: 0.5rem;
+}
+
+.dropdown-menu a{
+    color: #ffffff;
+}
+
+.dropdown-item:hover{
+    background-color: #3F3F3F;
+    color: #ffffff;
+    border-radius: 0.5rem;
+}
+
+/*BUTTONS*/
+.btnBack{
+    background-color: #615d5d;
+    color: white;
+    padding-top: 0.7rem;
+    text-align: center;
+    display: inline-block;
+    border-radius: 0.5rem;
+    width: 5.5rem;
+    height: 3.5rem;
+}
+
+.btnBack:hover{
+    background-color: #3F3F3F;
+    color: white;
+}
+
+
+.btnContinue{
+    background-color: #13d000;
+    color: white;
+    float: right;
+    text-align: center;
+    border-radius: 0.5rem;
+    width: 7rem;
+    height: 3.5rem;
+    padding-top: 0.7rem;
+    display: none;
+}
+
+.btnContinue:hover{
+    background-color: #28a745;
+    color: white;
+}
+
+
+.btnRetry{
+    background-color: rgba(244, 247, 118, 1) ;
+    color: black;
+    float: right;
+    padding-top: 0.7rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    width: 6rem;
+    height: 3.5rem;
+    display: none;
+}
+
+.btnRetry:hover{
+    background-color: #ffc107;
+    color: black;
+}
+
+.btnCheck{
+    border-radius: 0.5rem;
+    background-color: #2493df;
+    color: white;
+}
+
+.btnCheck:hover{
+    background-color: royalblue;
+    color: white;
+}
+
+/*TASKS*/
+.divList{
+    border: 0.05rem solid white;
+    margin: 0.2rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.divList:last-child{
+    margin-bottom: 1rem;
+}
+
+.divList:hover{
+    background-color: royalblue;
+}
+
+.emptyInp, .isEmpty{
+    display: inline-block;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    border: 0.05rem solid black;
+    border-radius: 0.3rem;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.choice{
+    display: inline-block;
+    width: 5rem;
+    text-align: center; 
+    color:black;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    background-color: white;
+    margin-bottom: 1rem;
+}
+
+/*MENU*/
+.menuItem{
+    background-color: #ffdf6c;
+    text-align: left;
+    height: 3rem;
+    padding:0.7rem 0;
+    border-radius: 0.5rem;
+    margin: 0.4rem 0;
+}
+
+.menuItem:last-child{
+    margin-bottom: 0;
+}
+
+.menuItem:hover{
+    background-color: #3F3F3F;
+    color: white;
+}
+
+.menuItem a:hover{
+    color: #ffffff;
+}
+
+.link h3{
+    text-align: center;
+    color: #3f3f3f;
+}
+
+.linkSecond h4{
+    color: #3f3f3f;
+    padding-left: 0.5rem;
+}
+
+  
+

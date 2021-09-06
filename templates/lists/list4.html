@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block head %}
+<title>foor Loop</title>
+<link rel="stylesheet" href="/static/css/main.css">
+{% endblock %}
+
+
+{% block body %}
+<div class="center">
+    <h2>for Loops</h2>
+    <p>
+        Let’s move on and introduce a new loop.
+        The for loop is used to iterate over a given sequence, such as lists or strings.
+        A for loop can be used to iterate over strings.
+        For example:
+    </p>
+    <div class="example">
+        <span>words = ["hello", "world", "spam", "eggs"]</span>
+        <br>
+        <span><b>for</b> word <b>in</b> words:</span>
+        <br>
+        <span style="text-indent: 40px; display: inline-block;">print(word + "!")</span>     
+        <br>
+        <span><b>hello!</b></span>
+        <br>
+        <span><b>world!</b></span>
+        <br>
+        <span><b>spam!</b></span>
+        <br>
+        <span><b>eggs!</b></span>
+        <br>
+        <span>str = "testing for loops"</span>
+        <br>
+        <span>count = 0</span>
+        <br>
+        <span>for x in str:</span>
+        <br>
+        <span style="text-indent: 40px; display: inline-block;">if(x == "t"):</span>
+        <br>
+        <span style="text-indent: 75px; display: inline-block;">count += 1</span>
+        <br>
+        <span>print(count)</span>
+        <br>
+        <span><b>2</b></span>
+    </div>
+    <p>The code above defines a count variable, iterates over the string and calculates the count of 't' letters in it. During each iteration, the x variable represents the current letter of the string.
+        The count variable is incremented each time the letter 't' is found, so, at the end of the loop it represents the number of 't' letters in the string.
+    </p>
+        <div class="note">
+            <p>While both, <b>for</b> and <b>while</b> loops can be used to achieve the same results, however, the <b>for</b> loop has cleaner and shorter syntax, making it a better choice in most cases.</p>
+    </div>
+    <div class="task" id="task">
+        <p>What's the output of this code?</p>
+        <img src="/static/img/codeFor.PNG" alt="">
+        <br>
+        <input type="text" name="" id="numFor">
+        <button class="btnCheck" onclick="checkFor()">Check</button>
+    </div>
+    <div class="buttons">
+        <a href="/lists" class="btnBack">Back</a>
+        <a href="/lists/list5" id="continue" class="btnContinue">Continue</a>
+        <a id="retry" class="btnRetry" onclick="retry()">Retry</a>
+    </div>
+</div>
+
+<script src="/static/js/main.js"></script>
+{% endblock %}

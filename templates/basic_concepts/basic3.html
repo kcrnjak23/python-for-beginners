@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block head %}
+<title>Data Types</title>
+<link rel="stylesheet" href="/static/css/main.css">
+{% endblock %}
+
+
+{% block body %}
+    <h2>Data Types</h2>
+    <p>Before we go any further, it’s a good idea to introduce the main types of data that we use in Python. Each value in Python has a <b>type</b>.
+        <br>
+        <br>
+        Text, like "Hello world", is called a <b>string</b>.
+        <br>
+        Whole numbers are called <b>integers</b>.
+        <br>
+        And numbers with a decimal point are called <b>floats</b>.        
+        </p>
+    <div class="example">
+        <span>print(8 / 2)</span>
+        <br>
+        <span><b>4.0</b></span>
+        <br>
+        <span>print(3 * 5.0)</span>
+        <br>
+        <span><b>15.0</b></span>
+    </div>
+    <div class="note">
+        <p>Some examples of numbers that are represented as floats are 0.5 and -7.8237591.</p>
+    </div>
+    <div class="task" id="task">
+        <p>Which of these will be stored as a float?</p>
+        <div class="divList" onclick="checkFloat(this)">7.4</div>
+        <div class="divList" onclick="checkFloat(this)">"hey"</div>
+        <div class="divList" onclick="checkFloat(this)">42</div>
+    </div>
+    <div class="buttons">
+        <a href="/basic_concepts" class="btnBack">Back</a>
+        <a href="/strings" id="continue" class="btnContinue">Continue</a>
+        <a id="retry" class="btnRetry" onclick="retry()">Retry</a>
+    </div>
+
+<script src="/static/js/main.js"></script>
+{% endblock %}

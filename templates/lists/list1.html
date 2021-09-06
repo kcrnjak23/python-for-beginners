@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block head %}
+<title>List1</title>
+<link rel="stylesheet" href="/static/css/main.css">
+{% endblock %}
+
+
+{% block body %}
+<div class="center">
+    <h2>Lists</h2>
+    <p>
+        At their simplest, <b>Lists</b> are used to store items.
+        We can create a list by using <b>square brackets </b> with <b>comas</b> separating items. 
+        If you want to access a certain item in the list, you can do this by using its index in square brackets.
+        In our example, that would look like this:
+    </p>
+    <div class="example">
+        <span>words = ["Hello", "world", "!"]</span>
+        <br>
+        <span>print(words[0])</span>
+        <br>
+        <span>print(words[1])</span>
+        <br>
+        <span>print(words[2])</span>
+        <br>
+        <span><b>Hello</b></span>
+        <br>
+        <span><b>world</b></span>
+        <br>
+        <span><b>!</b></span>
+    </div>
+    <div class="note">
+        <p>The first list item's index is <b>0</b>, rather than 1, as you might expect.</p>
+    </div>
+    <div class="task" id="task">
+        <p>What's the result of this code?</p>
+        <span>nums = [5,4,3,2,1]</span>
+        <br>
+        <span>print(nums[1])</span>
+        <br>
+        <input type="text" id="inputList">
+        <button class="btnCheck" onclick="checkList()">Check</button>
+    </div>
+    <div class="buttons">
+        <a href="/lists" class="btnBack">Back</a>
+        <a href="/lists/list2" id="continue" class="btnContinue">Continue</a>
+        <a id="retry" class="btnRetry" onclick="retry()">Retry</a>
+    </div>
+</div>
+
+<script src="/static/js/main.js"></script>
+{% endblock %}

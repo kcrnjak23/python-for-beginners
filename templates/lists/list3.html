@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block head %}
+<title>List Operations</title>
+<link rel="stylesheet" href="/static/css/main.css">
+{% endblock %}
+
+
+{% block body %}
+<div class="center">
+    <h2>List Operations</h2>
+    <p>
+        To check if an item is in a particular list, we can use the <b>in</b> operator.
+        It returns <b>True</b> if the item occurs one or more times in the list, and <b>False</b> if it doesn't.
+        Similarly, to check if an item is not in a list, you can use the <b>not</b> operator in one of the following ways:
+    </p>
+    <div class="example">
+        <span>words = ["spam", "egg", "hello"]</span>
+        <br>
+        <span>print("spam" <b>in</b> words)</span>
+        <br>
+        <span><b>True</b></span>
+        <br>
+        <span>print("tomato" <b>in</b> words)</span>
+        <br>
+        <span><b>False</b></span>
+        <br>
+        <span>print(<b>not</b> "egg" in words)</span>
+        <br>
+        <span><b>False</b></span>
+        <br>
+        <span>print("world" <b>not</b> in words)</span>
+        <br>
+        <span><b>True</b></span>
+    </div>
+    <div class="note">
+        <p>The <b>in</b> operator is also used to determine whether or not a string is a substring of another string.</p>
+    </div>
+    <div class="task" id="task">
+        <p>What's the result of whis code?</p>
+        <img src="/static/img/codeList.PNG" alt="">
+        <br>
+        <div class="divList" onclick="listOp(this)">9</div>
+        <div class="divList" onclick="listOp(this)">8</div>
+        <div class="divList" onclick="listOp(this)">7</div>
+        <div class="divList" onclick="listOp(this)">6</div>
+
+    </div>
+    <div class="buttons">
+        <a href="/lists" class="btnBack">Back</a>
+        <a href="/lists/list4" id="continue" class="btnContinue">Continue</a>
+        <a id="retry" class="btnRetry" onclick="retry()">Retry</a>
+    </div>
+</div>
+
+<script src="/static/js/main.js"></script>
+{% endblock %}

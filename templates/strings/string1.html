@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block head %}
+<title>Strings</title>
+<link rel="stylesheet" href="/static/css/main.css">
+{% endblock %}
+
+
+{% block body %}
+<div class="center">
+    <h2>Strings</h2>
+    <p>We met strings in module 1, but now it’s time to get better acquainted.
+        Simply put, if you want to use text in Python, you have to use a <b>string</b>. But there’s a lot more to it than that, as we’ll find out together!        
+        We can create a <b>string</b> by entering text between <b>two single or double quotation marks</b>. Like this:</p>
+    <div class="example">
+        <span>print("Python is fun!")</span>
+        <br>
+        <span><b>Python is fun!</b></span>
+        <br>
+        <span>print('Always look on the bright side of life')</span>
+        <br>
+        <span><b>Always look on the bright side of life</b></span>
+    </div>
+    <div class="note">
+        The delimiter (" or ') used for a string doesn't affect how it behaves in any way.
+    </div>
+    <div class="task" id="task">
+        <p>Fill in the blanks to produce 'Hi there'</p>
+        <input type="text" id="inp1">
+        <p style="display: inline-block;">(' Hi there</p>
+        <input type="text" id="inp2">
+        <p style="display: inline-block;">)</p>
+        <button class="btnCheck" onclick="checkString()">Check</button>
+    </div>
+    <div class="buttons">
+        <a href="/strings" class="btnBack">Back</a>
+        <a href="/strings/string2" id="continue" class="btnContinue">Continue</a>
+        <a id="retry" class="btnRetry" onclick="retry()">Retry</a>
+        </div>
+</div>
+
+<script src="/static/js/main.js"></script>
+{% endblock %}

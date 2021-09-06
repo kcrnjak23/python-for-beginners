@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block head %}
+<title>Working with Variables</title>
+<link rel="stylesheet" href="/static/css/main.css">
+{% endblock %}
+
+
+{% block body %}
+<div class="center">
+    <h2>Working with Variables</h2>
+    <p>So, you’ve got your variable, and named it. You’re now free to use them to perform corresponding operations, just as you do with numbers and strings.
+        Variables can be reassigned as many times as you want. Like this:</p>
+    <div class="example">
+        <span>x = 7</span>
+        <br>
+        <span>print(x)</span>
+        <br>
+        <span><b>7</b></span>
+        <br>
+        <span>print(x + 3)</span>
+        <br>
+        <span>print(x)</span>
+        <br>
+        <span><b>10</b></span>
+        <br>
+        <span>x = hello</span>
+        <br>
+        <span>print(x + "!")</span>
+        <br>
+        <span><b>hello!</b></span>
+    </div>
+    <div class="task" id="task">
+        <span>What's the output of this code?</span>
+        <br>
+        <span>spam = "eggs"</span>
+        <br>
+        <span>print(spam * 3)</span>
+        <div class="divList" onclick="checkChoice(this)" style="margin-top: 10px;">"eggseggseggseggs"</div>  
+        <div class="divList" onclick="checkChoice(this)">"spamspamspamspam"</div>
+        <div class="divList" onclick="checkChoice(this)">spamspamspam</div>
+        <div class="divList" onclick="checkChoice(this)">eggseggseggs</div>    
+    </div>
+    <div class="buttons">
+        <a href="/variables" class="btnBack">Back</a>
+        <a href="/variables/variables3" id="continue" class="btnContinue">Continue</a>
+        <a id="retry" class="btnRetry" onclick="retry()">Retry</a>
+    </div>
+</div>
+
+<script src="/static/js/main.js"></script>
+{% endblock %}

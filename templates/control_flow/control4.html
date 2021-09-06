@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block head %}
+<title>else Statements</title>
+<link rel="stylesheet" href="/static/css/main.css">
+{% endblock %}
+
+
+{% block body %}
+<div class="center">
+    <h2>else Statements</h2>
+    <p>And we can totally do the same thing with statements that evaluate to false. We just need a different statement. This is where the else statement comes in!
+        The <b>else</b> statement can be used to run some statements when the condition of the <b>if</b> statement is <b>False</b>.   
+        As with if statements, the code inside the block needs to be indented.</p>
+    <div class="example">
+        <span>x = 4</span>
+        <br>
+        <span><b>if</b> x == 5:</span>
+        <br>
+        <span style="text-indent: 30px; display: inline-block;">print("Yes")</span>
+        <br>
+        <span><b>else:</b></span>
+        <br>
+        <span style="text-indent: 30px; display: inline-block;">print("No")</span>
+        <br>
+        <span><b>No</b></span>
+    </div>
+    <div class="note">
+        <p>The <b>colon</b> at the end else keyword is important, don’t leave it out.</p>
+    </div>
+    <div class="task" id="task">
+        <p>What's the result of this code?</p>
+        <img src="/static/img/codeElse.PNG" alt="">
+        <br>
+        <input type="text" id="numberElse">
+        <button class="btnCheck" onclick="checkElse()">Check</button>
+    </div>
+    <div class="buttons">
+        <a href="/control_flow" class="btnBack">Back</a>
+        <a href="/control_flow/control5" id="continue" class="btnContinue">Continue</a>
+        <a id="retry" class="btnRetry" onclick="retry()">Retry</a>
+        </div>
+</div>
+
+<script src="/static/js/main.js"></script>
+{% endblock %}

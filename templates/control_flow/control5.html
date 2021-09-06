@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block head %}
+<title>Boolean Logic</title>
+<link rel="stylesheet" href="/static/css/main.css">
+{% endblock %}
+
+
+{% block body %}
+<div class="center">
+    <h2>Boolean Logic</h2>
+    <p>Now it’s time to level up our Booleans with some operators!
+        The Boolean <b>and</b>, <b>or</b>, <b>not</b> operators allow to check for multiple conditions in an if statement.
+        <br>
+        <br>
+        Let’s start with the <b>and</b> operator. It is <b>True</b>, if both conditions evaluate to <b>True</b>.
+        <br>
+        <br>
+        The <b>or</b> operator is <b>True</b> if either (or both) of its conditions are <b>True</b>, and <b>False</b> if both conditions are <b>False</b>.
+        <br>
+        <br>
+        Finally, the <b>not</b> operator works a little differently. <b>not</b> takes just one argument, and inverts it.
+        The result of <b>not True</b> is <b>False</b>, and <b>not False</b> goes to <b>True</b>.
+    </p>
+    <div class="example">
+        <span>print(1 == 1 and 2 == 2)</span>
+        <br>
+        <span><b>True</b></span>
+        <br>
+        <span>print(1 == 1 or 2 == 3)</span>
+        <br>
+        <span><b>True</b></span>
+        <br>
+        <span>print(not 1 == 1)</span>
+        <br>
+        <span><b>False</b></span>
+    </div>
+    <div class="note">
+        <span>Boolean operators can be used in expression as many times as needed.</span>
+        <br>
+        <span>Besides values, you can also compare variables.</span>
+    </div>
+    <div class="task" id="task">
+        <p>What's the output of this code?</p>
+        <img src="/static/img/codeLogic.PNG" alt="">
+        <br>
+        <input type="text" id="inptLogic">
+        <button class="btnCheck" onclick="rightOption()">Check</button>
+    </div>
+    <div class="buttons">
+        <a href="/control_flow" class="btnBack">Back</a>
+        <a href="/control_flow/control6" id="continue" class="btnContinue">Continue</a>
+        <a id="retry" class="btnRetry" onclick="retry()">Retry</a>
+        </div>
+</div>
+
+<script src="/static/js/main.js"></script>
+{% endblock %}

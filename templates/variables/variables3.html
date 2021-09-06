@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block head %}
+<title>Input</title>
+<link rel="stylesheet" href="/static/css/main.css">
+{% endblock %}
+
+
+{% block body %}
+<div class="center">
+    <h2>Input</h2>
+    <p>What function would we use to get input from the user in Python? Drumroll please! That’s right, the <b>input </b> function! Python likes to keep things simple and intuitive.
+        So a game can ask for the user's name and age as <b>input </b> and then use them in the game.
+        The input function prompts the user for input, and returns what they enter as a <b>string </b>. Like this:</p>
+    <div class="example">
+        <span>x = input()</span>
+        <br>
+        <span>James</span>
+        <br>
+        <span>print("Hello " + x)</span>
+        <br>
+        <span><b>Hello James</b></span>
+    </div>
+    <div class="note">
+        <p>Even if the user enters a number as input, it’s processed as a <b>string </b></p>
+    </div>
+    <div class="task" id="task">
+        <p>What will be the ouput of this code if the user enters "2":</p>
+        <img src="/static/img/codeInput.PNG" alt="">
+        <br>
+        <input type="text" id="strNum">
+        <button class="btnCheck" onclick="assign()">Check</button>
+    </div>
+    <div class="buttons">
+        <a href="/variables" class="btnBack">Back</a>
+        <a href="/variables/variables4" id="continue" class="btnContinue">Continue</a>
+        <a id="retry" class="btnRetry" onclick="retry()">Retry</a>
+    </div>
+</div>
+
+<script src="/static/js/main.js"></script>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block head %}
+<title>Basic2</title>
+<link rel="stylesheet" href="/static/css/main.css">
+{% endblock %}
+
+
+{% block body %}
+<div class="center">
+    <h2>Simple operations</h2>
+    <p>So Python can spell, but can it count? Let’s talk about calculations.
+        Doing a calculation in Python is simple, just enter it into the <b>print</b> statement (don’t forget the parentheses!):
+    </p>
+    <div class="example">
+        <span>print(2 + 2)</span>
+        <br>
+        <span><b>4</b></span>
+        <br>
+        <span>print(5 - 3)</span>
+        <br>
+        <span><b>2</b></span>
+    </div>
+    <div class="note">
+        <p>See the spaces around the signs? The code would work without them–but they make it a lot easier to read.</p>
+    </div>
+    <div class="task" id="task">
+        <p>What does this code output?</p>
+        <p>print((4 + (2 / 2)) * 2 - 3)</p>
+        <input type="text" style="border-radius: 5px; text-align: center;" id="rez">
+        <button class="btnCheck" onclick="checkResult()">Check</button>
+    </div>
+    <div class="buttons">
+        <a href="/basic_concepts" class="btnBack">Back</a>
+        <a href="/basic_concepts/basic3" id="continue" class="btnContinue">Continue</a>
+        <a id="retry" class="btnRetry" onclick="retry()">Retry</a>
+    </div>
+
+    <script src="/static/js/main.js"></script>
+</div>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block head %}
+<title>Home Page</title>
+<link rel="stylesheet" href="/static/css/main.css">
+{% endblock %}
+
+{% block body %}
+<div class="header">
+    <h1>Python for beginners</h1>
+    <p>Python is a popular, easy-to-learn, and very powerful programming language, which is used in software and web
+        development, data science, machine learning, and many other fields. In this course, we’ll cover the basic
+        concepts of Python.Python for Beginners requires no prior programming experience, so let’s dive right in!
+    </p>
+</div>
+<br>
+<div>
+    <a class="link" href="/basic_concepts" role="button">
+        <h3 class="menuItem">Basic Concepts</h3>
+    </a>
+    <a class="link" href="/strings" role="button">
+        <h3 class="menuItem">Strings</h3>
+    </a>
+    <a class="link" href="/variables" role="button">
+        <h3 class="menuItem">Variables</h3>
+    </a>
+    <a class="link" href="/control_flow" role="button">
+        <h3 class="menuItem">Control Flow</h3>
+    </a>
+    <a class="link" href="/lists" role="button">
+        <h3 class="menuItem">Lists</h3>
+    </a>
+</div>
+
+<script src="/static/js/main.js"></script>
+{% endblock %}

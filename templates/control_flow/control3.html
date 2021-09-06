@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block head %}
+<title>if Statements</title>
+<link rel="stylesheet" href="/static/css/main.css">
+{% endblock %}
+
+
+{% block body %}
+<div class="center">
+    <h2>if Statements</h2>
+    <p>Ok so our Boolean comparison has figured out if our statement is true or false, now what?
+        Well one thing you can do is use <b>if</b> statements to run code based on a certain condition, say, if the Boolean evaluates to <b>True</b>.
+        With <b>If statements </b>, if the condition evaluates to <b>True</b>, the statements are carried out. Otherwise, they aren't carried out.
+        An <b>if statement</b> looks like this:</p>
+    <div class="example">
+        <span>x = 42</span>
+        <br>
+        <span>if x > 5:</span>
+        <br>
+        <span style="text-indent: 30px; display: inline-block;">print("x is greater than 5")</span>
+        <br>
+        <span><b>42 is greater than 5</b></span>
+    </div>
+    <p>Since the condition of the if statement is True, the program outputs "x is greater than 5".
+    </p>
+    <div class="note">
+        <p>The colon at the end of <b>if</b> statement is important, don’t leave it out.</p>
+    </div>
+    <div class="task" id="task">
+        <p>What's the output of this code?</p>
+        <img src="/static/img/codeIf.PNG" alt="">
+        <br>
+        <input id="numIf" type="text">
+        <button class="btnCheck" onclick="checkIf()">Check</button>
+    </div>
+    <div class="buttons">
+        <a href="/control_flow" class="btnBack">Back</a>
+        <a href="/control_flow/control4" id="continue" class="btnContinue">Continue</a>
+        <a id="retry" class="btnRetry" onclick="retry()">Retry</a>
+        </div>
+</div>
+
+<script src="/static/js/main.js"></script>
+{% endblock %}

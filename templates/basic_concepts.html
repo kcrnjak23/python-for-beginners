@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block head %}
+<title>Basic Concepts</title>
+<link rel="stylesheet" href="/static/css/main.css">
+{% endblock %}
+
+
+{% block body %}
+<div class="header">
+    <h1>Basic Concepts</h1>
+</div>
+<div>
+    <a class="linkSecond" href="/basic_concepts/basic1" role="button">
+        <h4 class="menuItem">1. Hello World</h4>
+    </a>
+    <a class="linkSecond" href="/basic_concepts/basic2" role="button">
+        <h4 class="menuItem">2. Simple Operations</h4>
+    </a>
+    <a class="linkSecond" href="/basic_concepts/basic3" role="button">
+        <h4 class="menuItem">3. Data Types</h4>
+    </a>
+</div>
+
+<div class="buttons">
+    <a href="/" class="btnBack">Back</a>
+</div>
+
+<script src="/static/js/main.js"></script>
+{% endblock %}

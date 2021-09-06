@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    
+
+    {% block head %} {% endblock %}
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Project</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01"
+                aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExample01">
+                <ul class="navbar-nav me-auto mb-2">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown"
+                            aria-expanded="false">Basic Concepts</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="/basic_concepts/basic1">1. Hello World</a></li>
+                            <li><a class="dropdown-item" href="/basic_concepts/basic2">2. Simple Operations</a></li>
+                            <li><a class="dropdown-item" href="/basic_concepts/basic3">3. Data Types</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown"
+                            aria-expanded="false">Strings</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="/strings/string1">1. Strings</a></li>
+                            <li><a class="dropdown-item" href="/strings/string2">2. String Operations</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown"
+                            aria-expanded="false">Variables</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="/variables/variables1">1. Variables</a></li>
+                            <li><a class="dropdown-item" href="/variables/variables2">2. Working with Variables</a></li>
+                            <li><a class="dropdown-item" href="/variables/variables3">3. Input</a></li>
+                            <li><a class="dropdown-item" href="/variables/variables4">4. In-Place Operators</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown"
+                            aria-expanded="false">Control Flow</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="/control_flow/control1">1. Booleans</a></li>
+                            <li><a class="dropdown-item" href="/control_flow/control2">2. Comparison</a></li>
+                            <li><a class="dropdown-item" href="/control_flow/control3">3. if Statements</a></li>
+                            <li><a class="dropdown-item" href="/control_flow/control4">4. else Statements</a></li>
+                            <li><a class="dropdown-item" href="/control_flow/control5">5. Boolean Logic</a></li>
+                            <li><a class="dropdown-item" href="/control_flow/control6">6. while Loops</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown"
+                            aria-expanded="false">Lists</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="/lists/list1">1. Lists</a></li>
+                            <li><a class="dropdown-item" href="/lists/list2">2. Strings as Lists</a></li>
+                            <li><a class="dropdown-item" href="/lists/list3">3. List Operations</a></li>
+                            <li><a class="dropdown-item" href="/lists/list4">4. for Loop</a></li>
+                            <li><a class="dropdown-item" href="/lists/list5">5. Range</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        {% block body %} {% endblock %}
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

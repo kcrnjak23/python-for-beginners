@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block head %}
+<title>Lists</title>
+<link rel="stylesheet" href="/static/css/main.css">
+{% endblock %}
+
+
+{% block body %}
+<div class="header">
+    <h1>Lists</h1>
+</div>
+<div>
+    <a class="linkSecond" href="/lists/list1" role="button">
+        <h4 class="menuItem">1. Lists</h4>
+    </a>
+    <a class="linkSecond" href="/lists/list2" role="button">
+        <h4 class="menuItem">2. Strings as Lists</h4>
+    </a>
+    <a class="linkSecond" href="/lists/list3" role="button">
+        <h4 class="menuItem">3. List Operations</h4>
+    </a>
+    <a class="linkSecond" href="/lists/list4" role="button">
+        <h4 class="menuItem">4. for Loop</h4>
+    </a>
+    <a class="linkSecond" href="/lists/list5" role="button">
+        <h4 class="menuItem">5. Range</h4>
+    </a>
+    
+</div>
+
+<div class="buttons">
+    <a href="/" class="btnBack">Back</a>
+</div>
+
+<script src="/static/js/main.js"></script>
+{% endblock %}

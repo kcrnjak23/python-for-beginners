@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block head %}
+<title>Range</title>
+<link rel="stylesheet" href="/static/css/main.css">
+{% endblock %}
+
+
+{% block body %}
+<div class="center">
+    <h2>Range</h2>
+    <p>
+        Python makes it super easy to create number sequences using the <b>range()</b> function.
+        By default, it starts from 0, increments by 1 and stops <b>before the specified number</b>.
+        If <b>range</b> is called with one argument, it’ll produce an object with values from 0 to that argument.
+        If it’s called with two arguments, it’ll produce values from the first to the second.
+    </p>
+    <div class="example">
+        <span>numbers = list(<b>range</b>(5))</span>
+        <br>
+        <span>print(numbers)</span>
+        <br>
+        <span><b>0</b></span>
+        <br>
+        <span><b>1</b></span>
+        <br>
+        <span><b>2</b></span>
+        <br>
+        <span><b>3</b></span>
+        <br>
+        <span><b>4</b></span>
+        <br>
+        <span>numbers = list(<b>range</b>(6,10))</span>
+        <br>
+        <span>print(numbers)</span>
+        <br>
+        <span><b>6</b></span>
+        <br>
+        <span><b>7</b></span>
+        <br>
+        <span><b>8</b></span>
+        <br>
+        <span><b>9</b></span>
+    </div>
+    <div class="note">
+        <span>In order to output the range as a list, we need to explicitly convert it to a list, using the <b>list()</b> function.</span>
+        <br> 
+        <span>Remember, the second argument is not included in the range</span>
+    </div>
+    <div class="task" id="task">
+        <p>What's the result of this code?</p>
+        <p>print(range(20) == range(0,20))</p>
+        <div class="divList" onclick="trueFalse(this)">True</div>
+        <div class="divList" onclick="trueFalse(this)">False</div>
+        
+    </div>
+    <div class="buttons">
+        <a href="/lists" class="btnBack">Back</a>
+        <a href="/" id="continue" class="btnContinue">Continue</a>
+        <a id="retry" class="btnRetry" onclick="retry()">Retry</a>
+    </div>
+</div>
+
+<script src="/static/js/main.js"></script>
+{% endblock %}

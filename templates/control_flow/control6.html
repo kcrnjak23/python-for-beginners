@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block head %}
+<title>while Loops</title>
+<link rel="stylesheet" href="/static/css/main.css">
+{% endblock %}
+
+
+{% block body %}
+<div class="center">
+    <h2>while Loops</h2>
+    <p>Here’s another time saver!
+        We can use the <b>while</b> loop to repeat a block of code multiple times.
+        For example, let's say we need to process multiple user inputs, so that each time the user inputs something, the same block of code needs to execute.
+        Here’s a <b>while</b> loop containing a variable that counts up from 1 to 5, at which point the loop terminates.</p>
+    <div class="example">
+        <span>i = 1</span>
+        <br>
+        <span><b>while</b> i &lt;=5:</span>
+        <br>
+        <span style="text-indent: 30px; display: inline-block;">print(i)</span>
+        <br>
+        <span style="text-indent: 30px; display: inline-block;">i = i + 1</span>
+        <br>
+        <span>print("Finished")</span>
+        <br>
+        <span>1</span>
+        <br>
+        <span>2</span>
+        <br>
+        <span>3</span>
+        <br>
+        <span>4</span>
+        <br>
+        <span>5</span>
+        <br>
+        <span>Finished</span>
+        <br>
+    </div>
+    <p>During each loop iteration, the i variable gets incremented by one, until it reaches 5.
+        So, the loop will execute the print statement 5 times.</p>
+    <div class="note">
+        <p>The code in the body of a <b>while</b> loop is executed repeatedly. This is called <b>iteration</b>.</p>
+    </div>
+    <div class="task" id="task">
+        <p>How many numbers does this code print?</p>
+        <img src="/static/img/codeLoops.PNG" alt="">
+        <br>
+        <input type="text" id="numberWhile">
+        <button class="btnCheck" onclick="checkWhile()">Check</button>
+    </div>
+    <div class="buttons">
+        <a href="/control_flow" class="btnBack">Back</a>
+        <a href="/lists" id="continue" class="btnContinue">Continue</a>
+        <a id="retry" class="btnRetry" onclick="retry()">Retry</a>
+        </div>
+</div>
+
+<script src="/static/js/main.js"></script>
+{% endblock %}
